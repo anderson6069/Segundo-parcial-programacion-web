@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Áreas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cálculo de Áreas bajo una Curva</h1>
+    <form id="areaForm">
+        <label for="xInicial">Valor X Inicial:</label>
+        <input type="number" step="any" id="xInicial" required>
+        <label for="xFinal">Valor X Final:</label>
+        <input type="number" step="any" id="xFinal" required>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="result"></div>
+    <canvas id="chart" width="400" height="200"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
